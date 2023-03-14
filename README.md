@@ -5,4 +5,11 @@ Maintaining file manager is essential for ordering and accessing files in ease. 
 AES and RSA algorithm can be used to secure file manager on cloud. Advanced Encryption Standard (AES) is a symmetric-key algorithm, in which the same key is used for both encrypting and decrypting the data. AES have fixed block size of 128 bits with key size is 128, 192, 256 and rounds is 10, 12, 14 (its depending on key size). They are used for increase data security and confidentiality. RSA (Rivest–Shamir–Adleman) is an asymmetric cryptographic algorithm, in which they use two different keys and the key size is 1,536 to 4,096 bit with round 1. It is used to encrypt the data to provide security so that only the concerned user can access it. By securing the data, we are not allowing unauthorized access to it. User data is encrypted first and then it is stored in the Cloud. When user places a request for the data in the Cloud . The data is provided to respected user by decryption after accepting Master key from user. Double encryption process will take place to enhance the security where the data that are encrypted by using AES will produce a Master key. The AES Master key again encrypted by RSA  which produce another key and the key needs to be maintained securely. During decryption, the  RSA key is used to decrypt AES Master key and at last by using AES Master key the data is decrypted and viewed by user. The data here represents the user's files. The proposed system can be implemented by using an Google Firebase cloud that can be accessed through an API calls. 
 
 
+
+
 <img src="File manager.jpeg">
+
+
+
+
+
